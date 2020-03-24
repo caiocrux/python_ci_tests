@@ -92,7 +92,7 @@ parso==0.5.1
 passlib==1.7.1
 pexpect==4.2.1
 pickleshare==0.7.5
-Pillow==5.1.0
+Pillow==6.2.0
 Pivy==0.6.5a0
 plotly==4.1.1
 pluggy==0.12.0
