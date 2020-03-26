@@ -23,10 +23,10 @@ jobs:
           command: |
             . venv/bin/activate
             flake8 --exclude=venv* --statistics
+            coverage run -m pytest
+            coverage report
+            coverage html  # open htmlcov/index.html in a browser
             codecov --token=9337495f-ef52-41e5-88c3-0ca0fe3504e2
-            #coverage run -m pytest
-            #coverage report
-            #coverage html  # open htmlcov/index.html in a browser
-            #- store_artifacts:
-            #path: htmlcov
+      - store_artifacts:
+            path: htmlcov
 
